@@ -1,0 +1,20 @@
+{
+  "name": "lxcrypt",
+  "version": "1.0",
+  "description": "LxCrypt is a tool to securely encrypt files. It's very easy to use and doesn't require any knowledge.",
+  "scripts": {
+    "build": "tsc && pkg js/index.js -C Brotli --out-path dist",
+    "start": "tsc && node js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LioX7/LxCrypt.git"
+  },
+  "author": "LioX",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.8",
+    "@types/prompts": "^2.0.14",
+    "prompts": "^2.4.2"
+  }
+}
