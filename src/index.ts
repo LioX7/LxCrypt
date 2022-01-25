@@ -35,7 +35,7 @@ async function filepath() {
     message:
       "Please drag the file into the console window. If this doesn't work, you can just enter the path.",
   });
-  return response.file;
+  return response.file.replace(/["]+/g, "");
 }
 async function close() {
   const response = await prompts({
